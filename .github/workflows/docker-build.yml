@@ -6,10 +6,7 @@ on:
 
 jobs:
   docker:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [linux/amd64,linux/arm64]
+    runs-on: ubuntu-latest
     steps:
       -
         name: Set up QEMU
